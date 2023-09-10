@@ -1,0 +1,96 @@
+
+/* CSS For both customer and vendor form */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+fieldset{
+    width: 77%;
+    height: 100px;
+    border: 3px solid blue;
+    border-radius: 23px;
+}
+.box{
+    /* background-color: bisque; */
+    padding: 10px;
+}
+.box input{
+    margin-right: 180px;
+    order: 2px solid green;
+    border-radius: 5px;
+}
+.box label{
+    margin-left: 14px;
+}
+/* input[type='submit']{
+    display: block;
+    width: 23%;
+    margin-left: 279px;
+    border: 3px solid pink;
+    margin-top: 6px;
+    border-radius: 11px;
+} */
+/* button{
+    display: block;
+    width: 23%;
+    margin-left: 279px;
+    border: 3px solid pink;
+    margin-top: 6px;
+    border-radius: 11px;
+} */
+.text-center {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+.btn {
+    font-family: 'Bree Serif', serif;
+    display: block;
+    /* margin: 17px auto; */
+    margin-left: 262px;
+    width: 288px;
+    text-align: center;
+    padding: 3px 15px;
+    font-size: 1.2rem;
+    background-color: rgb(59, 13, 13);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(150, 85, 59);
+    color: rgb(247, 241, 241);
+}
+
+ .section{
+    display: flex;
+    padding-top: 45px;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: 120vh;
+    background-image: linear-gradient(45deg, rgb(46 190 199), transparent);
+ }
+#form-flex{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+.item{
+    display: flex;
+    flex-basis: 33%;
+}
+.item .child{
+    flex-basis: 12%;
+    margin: 19px;
+    text-align: center;
+    font-size: 15px;
+    border: 2px solid red;
+    border-radius: 11px;
+}

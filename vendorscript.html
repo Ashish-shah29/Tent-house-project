@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Vendor_Calulation(){
+            var l = document.getElementById('length').value;
+            var b = document.getElementById('breadth').value;
+    
+            if(l==0||b==0){
+                document.getElementById('c').value = 0;
+                document.getElementById('vp').value = 0;
+                document.getElementById('hp').value = 0;
+                document.getElementById('k').value = 0;
+                document.getElementById('p').value = 0;
+                return;
+     
+            }
+    
+            var a,n,d,v,x,y,h ,parde;
+            if(l<b){
+                var temp = l;
+                l= b;
+                b = temp;
+            }
+            
+            
+            a = 2*((b/15) + 1);
+            n = l/15;
+            d = (b/15) + 1;
+            v = a + (n-1) *d;
+            x = ((b/15)*2) + (b/15)+1;
+            y = (b/15)*2 + 1;
+            h = x + (n-1)*y;
+            parde = (l/15) * 2;
+    
+    
+           var noclg = (l/15) * (b/15);
+           document.getElementById('c').value = noclg;
+           document.getElementById('vp').value = v;
+           document.getElementById('hp').value = h;
+           document.getElementById('k').value = v;
+           document.getElementById('p').value = parde;
+     
+    
+        }
+    
+       </script>
+               <!-- <!-......................- /for vendor -->  
+     
+       <h3>for vendor </h3>                   
+        
+        enter length :
+        <input type="number" id = "length">
+    
+        enter breadth :
+        <input type="number" id = "breadth"><br>
+    
+        <input type="submit"  value = " go" onclick="Vendor_Calulation()"><br><br><br>
+        ceiling: <input type="number" id="c"><br>
+        parde  : <input type="number" id="p"><br>
+        vertical pipe :<input type="number" id="vp"><br>
+        horizontal pipe :<input type="number" id="hp"><br>
+        khute  :   <input type="number" id="k"><br><br><br>
+        
+        </html>    
+        </body>

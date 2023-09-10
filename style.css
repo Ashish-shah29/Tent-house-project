@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.headerHome{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#cae9f580,rgb(17 17 70 / 50%)),url(bg/beautiful-church-decorated-wedding-ceremony-christian-detaill-decoration-marriage-romantic-floral-concept-83821612-transformed.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text-box{
+    width: 60%;
+    height: 60vh;
+    color: black;
+    position: absolute;
+    top: 55%;
+    left: 46%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.text-box h1{
+    font-size: 50px;
+    color: black;
+}
+.text-box p{
+    font-size: 28px;
+   color:  #1b6c22;
+   font-weight: bold;
+   margin: 15px 2px 64px 2px;
+}
+.btn{
+    color:#064a00;
+    font-weight: bold;
+    width: 177px;
+    margin-right: 130px;
+    margin-left: 33px;
+    text-decoration: none;
+    padding: 3px 6px;
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+/* .btn2{
+    color: #ab1919;
+    margin-right: 259px;
+    text-decoration: none;
+    padding: 3px 6px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+} */
+

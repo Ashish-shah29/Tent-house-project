@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleForm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <title>Vender</title>
+</head>
+<body>
+    <script>
+        function Vendor_Calulation(){
+            var l = document.getElementById('length').value;
+            var b = document.getElementById('breadth').value;
+    
+            if(l==0||b==0){
+                document.getElementById('c').value = 0;
+                document.getElementById('vp').value = 0;
+                document.getElementById('hp').value = 0;
+                document.getElementById('k').value = 0;
+                document.getElementById('p').value = 0;
+                return;
+     
+            }
+    
+            var a,n,d,v,x,y,h ,parde;
+            if(l<b){
+                var temp = l;
+                l= b;
+                b = temp;
+            }
+            
+            
+            a = 2*((b/15) + 1);
+            n = l/15;
+            d = (b/15) + 1;
+            v = a + (n-1) *d;
+            x = ((b/15)*2) + (b/15)+1;
+            y = (b/15)*2 + 1;
+            h = x + (n-1)*y;
+            parde = (l/15) * 2;
+    
+    
+           var noclg = (l/15) * (b/15);
+           document.getElementById('c').value = noclg;
+           document.getElementById('vp').value = v;
+           document.getElementById('hp').value = h;
+           document.getElementById('k').value = v;
+           document.getElementById('p').value = parde;
+     
+    
+        }
+    
+       </script>
+               <!-- <!-......................- /for vendor -->  
+     
+       <!-- <h3>for vendor </h3>                    -->
+        <section class="section">
+        <fieldset class="text-center">
+            <legend>Enter the Parameters</legend>
+            <div class="box">
+                <label for="lgt" >Enter Length :</label>
+                <input type="number" id = "length" class=" text-center">
+                <label for="bdt" class=" text-center">Enter Breath:</label>
+                <input type="number" id = "breadth" class=" text-center"><br>
+            </div>
+            <!-- <input type="submit" value=" find no of itmes you may need" onclick="Customer_Calculation()"> -->
+            <button class="btn text-center" onclick="Vendor_Calulation()">Go</button>
+        </fieldset>
+        <form action="" id="form-flex" class="text-center">
+        <div class="item">
+        <label for="ceiling" class="child">Ceiling </label>
+         <input type="number" id="c" class="child">
+        </div>
+         <div class="item">
+        <label for="parde" class="child">Parde </label>
+        <input type="number" id="p" class="child">
+    </div>
+        <div class="item">
+        <label for="vertical" class="child">Vertical Pipe </label>
+        <input type="number" id="vp" class="child">
+    </div>
+        <div class="item">
+        <label for="horizontal pipe " class="child">Horizontal Pipe</label>
+        <input type="number" id="hp" class="child"> 
+    </div>
+        <div class="item">
+        <label for="khute" class="child">Khute</label>
+        <input type="number" id="k" class="child">
+    </form>
+    </div>
+    </section>
+        </html>    
+        </body>
